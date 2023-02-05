@@ -1,0 +1,95 @@
+:root {
+  --white-primary: #fcfcfc;
+  --white-secondary: #e5e5e5;
+  --black-primary: #202020;
+  --black-secondary: #5e5e5e;
+  --blue: #1d0bef;
+  --dark-blue: #1f1f3f;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: var(--white-primary);
+  color: var(--black-primary);
+  scroll-behavior: smooth;
+}
+
+header {
+  padding-top: 124px;
+  background-image: url(../images/banner/banner-img.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+header #header-title {
+  font-family: "Playfair Display", serif;
+  font-size: 52px;
+  line-height: 64px;
+}
+header #header-subtitle {
+  font-size: 20px;
+  margin-bottom: 48px;
+}
+header #header-btn {
+  margin-bottom: 164px;
+}
+
+a {
+  text-decoration: none;
+  color: var(--black-secondary);
+}
+
+p {
+  font-weight: 300;
+}
+
+#partners {
+  position: absolute;
+  left: 0;
+  right: 0;
+  transform: translateY(-50%);
+}
+#partners .card {
+  padding: 24px;
+  border-radius: 24px;
+  border: none;
+}
+
+#destinations {
+  padding-top: 164px;
+  background-color: var(--dark-blue);
+  color: var(--white-primary);
+}
+#destinations .section-subtitle {
+  color: var(--white-secondary);
+}
+
+.btn-outline-primary {
+  border-color: var(--blue);
+  color: var(--blue);
+}
+
+.btn-outline-primary:hover {
+  background-color: var(--blue);
+}
+
+.btn-primary {
+  background-color: var(--blue);
+}
+
+.navbar-brand,
+.section-brand {
+  font-family: "Whisper", cursive;
+  font-size: 36px;
+}
+
+.section-text {
+  text-align: center;
+}
+.section-text .section-title {
+  font-family: "Playfair Display", serif;
+  font-size: 36px;
+}
+.section-text .section-subtitle {
+  color: var(--black-secondary);
+}/*# sourceMappingURL=index.css.map */
