@@ -229,13 +229,14 @@ p {
 			}
 			footer {
 				.footer-title {
-					font-size: 18px;
+					font-size: 24px;
 				}
 				.footer-subtitle {
 					max-width: 60%;
 				}
 			}
-			p {
+			p,
+			a {
 				font-size: 14px;
 			}
 			// ID style sort by used first
@@ -255,7 +256,7 @@ p {
 			#destinations {
 				.card {
 					.destination-title {
-						font-size: 18px;
+						font-size: 24px;
 					}
 				}
 			}
@@ -263,7 +264,7 @@ p {
 				height: auto;
 				margin-bottom: 0;
 				.testi-name {
-					font-size: 18px;
+					font-size: 24px;
 				}
 			}
 			#cta {
@@ -271,6 +272,9 @@ p {
 					font-size: 28px;
 				}
 				.section-subtitle {
+					width: 100%;
+				}
+				.btn {
 					width: 100%;
 				}
 			}
@@ -284,14 +288,14 @@ p {
 			}
 			.navbar-brand,
 			.section-brand {
-				font-size: 24px;
+				font-size: 28px;
 			}
 			.section-brand {
 				margin-bottom: 0;
 			}
 			.section-text {
 				.section-title {
-					font-size: 24px;
+					font-size: 28px;
 				}
 			}
 		}
