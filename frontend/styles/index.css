@@ -234,12 +234,13 @@ p {
     padding-bottom: 48px;
   }
   html body footer .footer-title {
-    font-size: 18px;
+    font-size: 24px;
   }
   html body footer .footer-subtitle {
     max-width: 60%;
   }
-  html body p {
+  html body p,
+html body a {
     font-size: 14px;
   }
   html body #partners .container {
@@ -254,19 +255,22 @@ p {
     height: 64px;
   }
   html body #destinations .card .destination-title {
-    font-size: 18px;
+    font-size: 24px;
   }
   html body #testimonials {
     height: auto;
     margin-bottom: 0;
   }
   html body #testimonials .testi-name {
-    font-size: 18px;
+    font-size: 24px;
   }
   html body #cta .section-brand {
     font-size: 28px;
   }
   html body #cta .section-subtitle {
+    width: 100%;
+  }
+  html body #cta .btn {
     width: 100%;
   }
   html body .btn {
@@ -278,13 +282,13 @@ p {
   }
   html body .navbar-brand,
 html body .section-brand {
-    font-size: 24px;
+    font-size: 28px;
   }
   html body .section-brand {
     margin-bottom: 0;
   }
   html body .section-text .section-title {
-    font-size: 24px;
+    font-size: 28px;
   }
 }
 @media (max-width: 767.98px) {
