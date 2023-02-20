@@ -184,6 +184,7 @@ p {
 
 .btn {
   border-radius: 12px;
+  border: none;
 }
 
 .btn-outline-primary {
@@ -240,7 +241,7 @@ p {
     max-width: 60%;
   }
   html body p,
-html body a {
+  html body a {
     font-size: 14px;
   }
   html body #partners .container {
@@ -281,7 +282,7 @@ html body a {
     padding-right: 8%;
   }
   html body .navbar-brand,
-html body .section-brand {
+  html body .section-brand {
     font-size: 28px;
   }
   html body .section-brand {
@@ -325,4 +326,4 @@ html body .section-brand {
   #testimonials {
     margin-bottom: 260px;
   }
-}/*# sourceMappingURL=index.css.map */
+}/*# sourceMappingURL=main.css.map */

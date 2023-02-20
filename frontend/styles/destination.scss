@@ -1,0 +1,141 @@
+:root {
+	--white-primary: #fcfcfc;
+	--white-secondary: #e5e5e5;
+	--black-primary: #202020;
+	--black-secondary: #5e5e5e;
+	--blue: #1d0bef;
+	--dark-blue: #1f1f3f;
+}
+body {
+	font-family: "Montserrat", sans-serif;
+	background-color: var(--white-primary);
+	color: var(--black-primary);
+	min-width: 280px;
+	scroll-behavior: smooth;
+}
+nav {
+	background-color: var(--white-primary);
+}
+section {
+	padding-top: 84px;
+	padding-bottom: 84px;
+}
+footer {
+	padding-top: 84px;
+	padding-bottom: 24px;
+	margin-bottom: 0;
+	background-color: var(--dark-blue);
+	color: var(--white-primary);
+	.footer-title {
+		font-size: 28px;
+		font-weight: 700;
+	}
+	.footer-link {
+		display: block;
+		margin-bottom: 12px;
+	}
+	.footer-link,
+	.footer-subtitle {
+		color: var(--white-secondary);
+		text-decoration: none;
+		max-width: 75%;
+	}
+	.footer-copy {
+		text-align: center;
+	}
+	.row {
+		margin-bottom: 84px;
+	}
+}
+a {
+	color: var(--black-secondary);
+}
+p {
+	font-weight: 300;
+}
+
+// ID style sort by used first
+#breadcrumb {
+	padding-top: 148px;
+	padding-bottom: 148px;
+	background-color: var(--dark-blue);
+	.breadcrumb-item {
+		color: var(--white-primary);
+		font-weight: 300;
+		a {
+			color: var(--white-primary);
+			text-decoration: none;
+		}
+	}
+	.breadcrumb-item.active {
+		color: var(--white-primary);
+		font-weight: 700;
+	}
+}
+#destination {
+	padding-top: 0;
+	padding-bottom: 0;
+	position: relative;
+	margin-top: -124px;
+	z-index: 2;
+	.card {
+		padding: 48px 86px;
+	}
+	.destination-name {
+		font-weight: 700;
+		font-size: 52px;
+		line-height: 24px;
+	}
+}
+#cta {
+	background-color: var(--dark-blue);
+	color: var(--white-primary);
+	.section-title {
+		margin-bottom: 0;
+	}
+	.section-brand {
+		font-size: 48px;
+		margin-bottom: 12px;
+	}
+	.section-subtitle {
+		color: var(--white-secondary);
+		width: 50%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+
+// Class style sort by (a-z)
+.btn {
+	border-radius: 12px;
+	border: none;
+}
+.btn-outline-primary {
+	border-color: var(--blue);
+	color: var(--blue);
+}
+.btn-outline-primary:hover {
+	background-color: var(--blue);
+}
+.btn-primary {
+	background-color: var(--blue);
+}
+.navbar-brand,
+.section-brand {
+	font-family: "Whisper", cursive;
+	font-size: 36px;
+}
+.section-brand {
+	margin-bottom: -18px;
+}
+.section-text {
+	text-align: center;
+	.section-title {
+		font-family: "Playfair Display", serif;
+		font-size: 36px;
+	}
+	.section-subtitle {
+		color: var(--black-secondary);
+		margin-bottom: 48px;
+	}
+}
