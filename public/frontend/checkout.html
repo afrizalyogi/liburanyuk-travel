@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Meta tag -->
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <!-- External source fonts and styles -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Playfair+Display:wght@700&family=Whisper&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+            crossorigin="anonymous"
+        />
+
+        <!-- Custom stylesheets -->
+        <link rel="stylesheet" href="./styles/main.css" />
+        <link rel="stylesheet" href="./styles/checkout.css" />
+        <title>Destination Name | Liburan Yuk</title>
+    </head>
+    <body>
+        <!-- Breadcrumb section -->
+        <section id="breadcrumb">
+            <div class="container">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="/">HOME</a></li>
+                    <li class="breadcrumb-item">
+                        <a href="destination.html">UBUD</a>
+                    </li>
+                    <li class="breadcrumb-item active">CHECKOUT</li>
+                </ol>
+            </div>
+        </section>
+        <!-- End of breadcrumb section -->
+
+        <div id="main" class="container">
+            <div class="row">
+                <div class="col-xl-8">
+                    <!-- Input section -->
+                    <section id="input">
+                        <div class="card">
+                            <section id="who">
+                                <p class="card-title">Who's Going?</p>
+                                <p class="card-text">
+                                    Add traveler's information here
+                                </p>
+                                <table
+                                    class="table table-sm table-hover table-borderless text-center overflow-auto"
+                                >
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">Name</th>
+                                            <th scope="col">
+                                                National ID/Passport
+                                            </th>
+                                            <th scope="col">Nationality</th>
+                                            <th scope="col">Remove</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Afrizal Yogi</td>
+                                            <td>1870102030400005</td>
+                                            <td>Indonesia</td>
+                                            <td>
+                                                <button
+                                                    type="button"
+                                                    class="btn-close"
+                                                    aria-label="Close"
+                                                ></button>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <p>Add Member</p>
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <input
+                                            type="text"
+                                            class="form-control mb-md-0 mb-2"
+                                            placeholder="Full Name"
+                                        />
+                                    </div>
+                                    <div class="col-md-4">
+                                        <input
+                                            type="text"
+                                            class="form-control mb-md-0 mb-2"
+                                            placeholder="National ID/Passport"
+                                        />
+                                    </div>
+                                    <div class="col-md-3">
+                                        <input
+                                            type="text"
+                                            class="form-control mb-md-0 mb-2"
+                                            placeholder="Nationality"
+                                        />
+                                    </div>
+                                    <div class="col-md">
+                                        <button
+                                            class="btn btn-outline-primary w-100"
+                                        >
+                                            Add
+                                        </button>
+                                    </div>
+                                </div>
+                            </section>
+                            <section id="where">
+                                <p class="card-title">Where You From?</p>
+                                <p class="card-text">
+                                    Choose your departure points
+                                </p>
+                                <div class="row">
+                                    <div class="col-md">
+                                        <select
+                                            class="form-control mb-md-0 mb-2"
+                                            name="dataCountry"
+                                            id="dataCountry"
+                                        >
+                                            <!-- Can improved with function show city only from this city -->
+                                            <option
+                                                value="Select Country"
+                                                selected
+                                                disabled
+                                            >
+                                                Select Country
+                                            </option>
+                                            <option value="Indonesia">
+                                                Indonesia
+                                            </option>
+                                            <option value="Singapore">
+                                                Singapore
+                                            </option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md">
+                                        <select
+                                            class="form-control mb-md-0 mb-2"
+                                            name="dataCity"
+                                            id="dataCity"
+                                        >
+                                            <!-- Can improved with City API -->
+                                            <option
+                                                value="Select Transport"
+                                                selected
+                                                disabled
+                                            >
+                                                Select Transport
+                                            </option>
+                                            <option value="Jakarta">
+                                                Jakarta
+                                            </option>
+                                            <option value="Bandar Lampung">
+                                                Bandar Lampung
+                                            </option>
+                                            <option value="Bandung">
+                                                Bandung
+                                            </option>
+                                            <option value="Singapore">
+                                                Singapore
+                                            </option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </section>
+                            <section id="when">
+                                <p class="card-title">When To Go?</p>
+                                <p class="card-text">
+                                    Choose the suit time for your vacations
+                                </p>
+                                <div class="row">
+                                    <div class="col-md">
+                                        <input
+                                            class="form-control mb-md-0 mb-2"
+                                            type="date"
+                                        />
+                                    </div>
+                                    <div class="col-md">
+                                        <input
+                                            class="form-control mb-md-0 mb-2"
+                                            type="date"
+                                        />
+                                    </div>
+                                </div>
+                            </section>
+                            <section id="transport">
+                                <p class="card-title">Transports</p>
+                                <p class="card-text">
+                                    Pick a transport that suits your preferences
+                                </p>
+                                <div class="row">
+                                    <div class="col-md">
+                                        <select
+                                            class="form-control mb-md-0 mb-2"
+                                            name="dataTransportType"
+                                            id="dataTransportType"
+                                        >
+                                            <option
+                                                value="Select Transport"
+                                                selected
+                                                disabled
+                                            >
+                                                Select Transport
+                                            </option>
+                                            <option value="Air Travel">
+                                                Air Travel
+                                            </option>
+                                            <option value="Road Trip">
+                                                Road Trip
+                                            </option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md">
+                                        <select
+                                            class="form-control mb-md-0 mb-2"
+                                            name="dataServiceClass"
+                                            id="dataServiceClass"
+                                        >
+                                            <option
+                                                value="Select Class"
+                                                selected
+                                                disabled
+                                            >
+                                                Select Class
+                                            </option>
+                                            <option value="Economy">
+                                                Economy
+                                            </option>
+                                            <option value="Business">
+                                                Business
+                                            </option>
+                                            <option value="First Class">
+                                                First Class
+                                            </option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </section>
+                            <section id="accommodation">
+                                <p class="card-title">Accommodations</p>
+                                <p class="card-text">
+                                    Pick an accommodation that suits your
+                                    preference
+                                </p>
+                                <div class="row">
+                                    <div class="col-md">
+                                        <select
+                                            class="form-control mb-md-0 mb-2"
+                                            name="dataStarRating"
+                                            id="dataStarRating"
+                                        >
+                                            <option
+                                                value="Select Rating"
+                                                selected
+                                                disabled
+                                            >
+                                                Select Rating
+                                            </option>
+                                            <option value="5">
+                                                &#9733; &#9733; &#9733; &#9733;
+                                                &#9733;
+                                            </option>
+                                            <option value="4">
+                                                &#9733; &#9733; &#9733; &#9733;
+                                            </option>
+                                            <option value="3">
+                                                &#9733; &#9733; &#9733;
+                                            </option>
+                                            <option value="2">
+                                                &#9733; &#9733;
+                                            </option>
+                                            <option value="1">&#9733;</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md">
+                                        <select
+                                            class="form-control mb-md-0 mb-2"
+                                            name="dataRoomType"
+                                            id="dataRoomType"
+                                        >
+                                            <option
+                                                value="Select Type"
+                                                selected
+                                                disabled
+                                            >
+                                                Select Type
+                                            </option>
+                                            <option value="Standart">
+                                                Standart
+                                            </option>
+                                            <option value="Deluxe">
+                                                Deluxe
+                                            </option>
+                                            <option value="Suite">Suite</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                    </section>
+                    <!-- End of input section -->
+                </div>
+                <div class="col-xl-4">
+                    <!-- Pay section -->
+                    <section id="pay">
+                        <div class="card">
+                            <section id="order-info">
+                                <p class="card-title">Order Information</p>
+                                <p class="card-text">
+                                    Please check your order details to make sure
+                                    they are corrects
+                                </p>
+                                <br />
+                                <div class="d-flex">
+                                    <p class="text-start me-auto">Members</p>
+                                    <p class="text-end ms-auto">1 Person</p>
+                                </div>
+                                <div class="d-flex">
+                                    <p class="text-start me-auto">Transports</p>
+                                    <p class="text-end ms-auto">Rp 1.200.000</p>
+                                </div>
+                                <div class="d-flex">
+                                    <p class="text-start me-auto">
+                                        Accommodations
+                                    </p>
+                                    <p class="text-end ms-auto">Rp 1.800.000</p>
+                                </div>
+                                <div class="d-flex">
+                                    <p class="text-start me-auto">
+                                        Destination Fee
+                                    </p>
+                                    <p class="text-end ms-auto">Rp 50.000</p>
+                                </div>
+                                <div class="d-flex">
+                                    <p class="text-start me-auto">
+                                        Service Fee
+                                    </p>
+                                    <p class="text-end ms-auto">Rp 150.000</p>
+                                </div>
+                                <br />
+                                <div class="d-flex">
+                                    <p class="text-start me-auto">Discounts</p>
+                                    <p class="text-end ms-auto color-green">
+                                        -Rp 500.000
+                                    </p>
+                                </div>
+                                <div class="d-flex">
+                                    <p class="text-start me-auto">
+                                        Unique Code
+                                    </p>
+                                    <p class="text-end ms-auto color-green">
+                                        -Rp 758
+                                    </p>
+                                </div>
+                                <div class="d-flex">
+                                    <p class="text-start me-auto">Total</p>
+                                    <p class="text-end ms-auto">
+                                        <b>Rp 2.699.242</b>
+                                    </p>
+                                </div>
+                            </section>
+                            <section id="payment">
+                                <p class="card-title">Payments</p>
+                                <p class="card-text">
+                                    Please complete the payment to start your
+                                    journey
+                                </p>
+                                <div class="row align-items-center">
+                                    <div class="col-4">
+                                        <img
+                                            src="./images/bank/bca.png"
+                                            alt="BCA"
+                                        />
+                                    </div>
+                                    <div class="col">
+                                        <p>PT Liburan Yuk</p>
+                                        <p>Bank Central Asia</p>
+                                        <p><b>0220 9999 11</b></p>
+                                    </div>
+                                </div>
+                                <div class="row align-items-center">
+                                    <div class="col-4">
+                                        <img
+                                            src="./images/bank/bni.png"
+                                            alt="BCA"
+                                        />
+                                    </div>
+                                    <div class="col">
+                                        <p>PT Liburan Yuk</p>
+                                        <p>Bank Negara Indonesia</p>
+                                        <p><b>1111 9999 1234</b></p>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                        <a class="btn btn-primary w-100">I Have Paid</a>
+                        <a href="#" class="d-flex justify-content-center"
+                            >Cancel Booking</a
+                        >
+                    </section>
+                    <!-- End of pay section -->
+                </div>
+            </div>
+        </div>
+        <!-- Footer section -->
+        <footer class="border-top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-lg mb-lg-0 mb-4">
+                        <p class="footer-title">Liburan Yuk</p>
+                        <p class="footer-subtitle">
+                            A travel website based in Indonesia offers a custom
+                            package option based on the user's preference.
+                        </p>
+                    </div>
+                    <div class="col-md-6 col-lg mb-lg-0 mb-4">
+                        <p class="footer-title">Company</p>
+                        <a href="" class="footer-link">About Us</a>
+                        <a href="" class="footer-link">Partner With Us</a>
+                        <a href="" class="footer-link">Help Center</a>
+                    </div>
+                    <div class="col-md-6 col-lg mb-lg-0 mb-4">
+                        <p class="footer-title">Menu</p>
+                        <a href="#" class="footer-link">Home</a>
+                        <a href="#destinations" class="footer-link"
+                            >Destinations</a
+                        >
+                        <a href="#testimonials" class="footer-link"
+                            >Testimonials</a
+                        >
+                    </div>
+                    <div class="col-md-6 col-lg mb-lg-0 mb-4">
+                        <p class="footer-title">Get Connected</p>
+                        <p class="footer-subtitle">
+                            Bandar Lampung, <br />
+                            Indonesia
+                        </p>
+                        <p class="footer-subtitle">0812-111-3213</p>
+                        <p class="footer-subtitle">cs@liburanyuk.com</p>
+                    </div>
+                </div>
+                <p class="footer-copy border-top">
+                    &copy; 2023 Liburan Yuk by Afrizal Yogi | All rights
+                    Reserved
+                </p>
+            </div>
+        </footer>
+        <!-- End of footer section -->
+
+        <!-- External source scripts -->
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+            crossorigin="anonymous"
+        ></script>
+    </body>
+</html>
