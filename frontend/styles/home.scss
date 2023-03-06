@@ -1,0 +1,226 @@
+header {
+	padding-top: 124px;
+	background: url(../images/banner/banner-img.png);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	#header-title {
+		font-family: "Playfair Display", serif;
+		font-size: 52px;
+		line-height: 64px;
+	}
+	#header-subtitle {
+		max-width: 65%;
+		font-size: 20px;
+		margin-bottom: 48px;
+	}
+	#header-btn {
+		margin-bottom: 164px;
+	}
+}
+// ID style sort by used first
+#partners {
+	position: absolute;
+	left: 0;
+	right: 0;
+	transform: translateY(-50%);
+	.card {
+		padding: 24px;
+		border-radius: 24px;
+		border: none;
+	}
+	.section-subtitle {
+		margin-bottom: 0;
+	}
+}
+#destinations {
+	padding-top: 164px;
+	background-color: var(--dark-blue);
+	color: var(--white-primary);
+	.section-subtitle {
+		color: var(--white-secondary);
+	}
+	.card {
+		padding: 24px;
+		border: 2px solid var(--white-secondary);
+		text-align: center;
+		background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;
+		height: 380px;
+		.destination-title {
+			font-size: 28px;
+			font-weight: 700;
+			margin-bottom: 0;
+		}
+		.btn {
+			position: absolute;
+			left: 24px;
+			right: 24px;
+			bottom: 24px;
+		}
+	}
+	#destination-1 {
+		background-image: url(../images/destination/destination-1.png);
+	}
+	#destination-2 {
+		background-image: url(../images/destination/destination-2.png);
+	}
+	#destination-3 {
+		background-image: url(../images/destination/destination-3.png);
+	}
+	#destination-4 {
+		background-image: url(../images/destination/destination-4.png);
+	}
+}
+#testimonials {
+	background-color: var(--white-other);
+	height: 520px;
+	margin-top: -208px;
+	padding-top: 208px;
+	margin-bottom: 160px;
+	.section-subtitle {
+		color: var(--black-secondary);
+	}
+	.card {
+		padding: 48px 24px;
+		text-align: center;
+		border: 2px solid var(--white-secondary);
+		color: var(--black-primary);
+	}
+	.testi-profile {
+		width: 45%;
+		border-radius: 104px;
+		margin-bottom: 12px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.testi-name {
+		font-size: 28px;
+		font-weight: 700;
+		margin-bottom: 0;
+	}
+	.testi-desc {
+		margin: 24px 0;
+	}
+	.testi-job,
+	.testi-destination {
+		color: var(--black-secondary);
+		margin-bottom: 0;
+	}
+}
+#cta {
+	padding-top: 284px;
+	.section-title {
+		margin-bottom: 0;
+	}
+	.section-brand {
+		font-size: 48px;
+		margin-bottom: 12px;
+	}
+	.section-subtitle {
+		width: 35%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+
+// `sm` applies to x-small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) {
+	html {
+		body {
+			header {
+				#header-title {
+					font-size: 36px;
+					line-height: 48px;
+				}
+				#header-subtitle {
+					font-size: 14px;
+				}
+			}
+			// ID style sort by used first
+			#partners {
+				.container {
+					padding: 0;
+					width: 100%;
+				}
+				.card {
+					border-radius: 0;
+					width: 100%;
+				}
+				img {
+					height: 64px;
+				}
+			}
+			#destinations {
+				.card {
+					.destination-title {
+						font-size: 24px;
+					}
+				}
+			}
+			#testimonials {
+				height: auto;
+				margin-bottom: 0;
+				.testi-name {
+					font-size: 24px;
+				}
+			}
+			#cta {
+				padding-top: 84px;
+				.section-brand {
+					font-size: 28px;
+				}
+				.section-subtitle {
+					width: 100%;
+				}
+				.btn {
+					width: 100%;
+				}
+			}
+		}
+	}
+}
+
+// `md` applies to small devices (landscape phones, less than 768px)
+@media (max-width: 767.98px) {
+	body {
+		header {
+			#header-subtitle {
+				max-width: 100%;
+			}
+			#header-btn {
+				width: 100%;
+			}
+		}
+		// ID style sort by used first
+		#testimonials {
+			height: 1520px;
+			margin-bottom: 320px;
+			border-radius: 0;
+		}
+	}
+}
+
+// `lg` applies to medium devices (tablets, less than 992px)
+@media (max-width: 991.98px) {
+	header {
+		#header-btn {
+			margin-bottom: 220px;
+		}
+	}
+	// ID style sort by used first
+	#partners {
+		img {
+			display: flex;
+			margin-left: auto;
+			margin-right: auto;
+		}
+	}
+	#destinations {
+		padding-top: 220px;
+	}
+	#testimonials {
+		margin-bottom: 260px;
+	}
+}

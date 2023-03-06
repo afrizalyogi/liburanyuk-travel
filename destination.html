@@ -19,6 +19,7 @@
 			crossorigin="anonymous" />
 
 		<!-- Custom stylesheets -->
+		<link rel="stylesheet" href="./frontend/styles/main.css" />
 		<link rel="stylesheet" href="./frontend/styles/destination.css" />
 		<title>Destination Name | Liburan Yuk</title>
 	</head>
@@ -47,9 +48,7 @@
 							<a class="nav-link" href="#testimonials">TESTIMONIALS</a>
 						</li>
 						<form action="" class="form-inline">
-							<button class="btn btn-outline-primary px-4 py-2 w-100">
-								LOGIN
-							</button>
+							<button class="btn btn-primary px-4 py-2 w-100">LOGIN</button>
 						</form>
 					</ul>
 				</div>
@@ -62,27 +61,70 @@
 			<div class="container">
 				<ol class="breadcrumb">
 					<li class="breadcrumb-item"><a href="/">HOME</a></li>
-					<li class="breadcrumb-item">/</li>
 					<li class="breadcrumb-item active">UBUD</li>
 				</ol>
 			</div>
 		</section>
 		<!-- End of breadcrumb section -->
 
-		<section id="destination">
+		<!-- Gallery section -->
+		<section id="gallery">
 			<div class="container">
 				<div class="card">
-					<div class="destination-title d-flex">
+					<div class="gallery-title d-md-flex text-center text-md-start">
 						<div class="me-auto">
-							<p class="destination-name">Ubud</p>
-							<p class="destination-location">Bali, Indonesia</p>
+							<p class="gallery-name">Ubud</p>
+							<p class="gallery-location">Bali, Indonesia</p>
 						</div>
 						<div class="ms-auto">
-							<button class="btn btn-primary">GET A TRIP</button>
+							<button class="btn btn-primary mb-4 mb-md-0">GET A TRIP</button>
 						</div>
 					</div>
-					<div class="destination-img"></div>
-					<div class="destination-about">
+					<div class="gallery-img">
+						<div id="carousel" class="carousel slide" data-bs-ride="carousel">
+							<div class="carousel-inner">
+								<div class="carousel-item active">
+									<img
+										src="./frontend/images/destination/ubud/ubud-1.jpg"
+										class="d-block w-100"
+										alt="Destination Image" />
+								</div>
+								<div class="carousel-item">
+									<img
+										src="./frontend/images/destination/ubud/ubud-2.jpg"
+										class="d-block w-100"
+										alt="Destination Image" />
+								</div>
+								<div class="carousel-item">
+									<img
+										src="./frontend/images/destination/ubud/ubud-3.jpg"
+										class="d-block w-100"
+										alt="Destination Image" />
+								</div>
+							</div>
+							<button
+								class="carousel-control-prev"
+								type="button"
+								data-bs-target="#carousel"
+								data-bs-slide="prev">
+								<span
+									class="carousel-control-prev-icon"
+									aria-hidden="true"></span>
+								<span class="visually-hidden">Previous</span>
+							</button>
+							<button
+								class="carousel-control-next"
+								type="button"
+								data-bs-target="#carousel"
+								data-bs-slide="next">
+								<span
+									class="carousel-control-next-icon"
+									aria-hidden="true"></span>
+								<span class="visually-hidden">Next</span>
+							</button>
+						</div>
+					</div>
+					<div class="gallery-about">
 						<p class="about-title">About Destination</p>
 						<p class="about-text">
 							Quodsi haberent magnalia inter potentiam et divitias, et non illam
@@ -102,6 +144,7 @@
 				</div>
 			</div>
 		</section>
+		<!-- End of gallery section  -->
 
 		<!-- CTA Section -->
 		<section id="cta">
@@ -117,7 +160,7 @@
 		<!-- End of CTA section -->
 
 		<!-- Footer section -->
-		<footer>
+		<footer class="border-top">
 			<div class="container">
 				<div class="row">
 					<div class="col-md-6 col-lg mb-lg-0 mb-4">
@@ -149,19 +192,20 @@
 						<p class="footer-subtitle">cs@liburanyuk.com</p>
 					</div>
 				</div>
-				<p class="footer-copy">
-					&copy; 2023 Liburan Yuk by Afrizal Yogi | All rights Reserved
-				</p>
 			</div>
+			<p class="footer-copy border-top">
+				&copy; 2023 Liburan Yuk by Afrizal Yogi | All rights Reserved
+			</p>
 		</footer>
 		<!-- End of footer section -->
 
-		<!-- Bootstrap Bundle JS -->
+		<!-- External source scripts -->
 		<script
 			src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
 			integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
 			crossorigin="anonymous"></script>
 
 		<!-- Custom scripts -->
+		<script src="./frontend/scripts/destinations.js"></script>
 	</body>
 </html>

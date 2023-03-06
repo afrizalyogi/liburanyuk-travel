@@ -1,0 +1,67 @@
+#main {
+	margin-top: 25vh;
+	.container {
+		text-align: center;
+		margin-left: auto;
+		margin-right: auto;
+		img {
+			width: 184px;
+			margin-bottom: 23px;
+		}
+		.main-title {
+			font-size: 28px;
+			font-weight: 700;
+			margin-bottom: 0;
+		}
+		.main-subtitle {
+			width: 28%;
+			margin: 0 auto 24px auto;
+		}
+	}
+}
+
+// `sm` applies to x-small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) {
+	body {
+		#main {
+			margin-top: 25vh;
+			.container {
+				img {
+					width: 148px;
+				}
+				.main-title {
+					font-size: 20px;
+				}
+				.main-subtitle {
+					font-size: 14px;
+					width: 100%;
+				}
+			}
+		}
+	}
+}
+
+// `md` applies to small devices (landscape phones, less than 768px)
+@media (max-width: 767.98px) {
+	body {
+		#main {
+			.container {
+				.main-subtitle {
+					width: 55%;
+				}
+			}
+		}
+	}
+}
+
+// `lg` applies to medium devices (tablets, less than 992px)
+@media (max-width: 991.98px) {
+	#main {
+		margin-top: 15vh;
+		.container {
+			.main-subtitle {
+				width: 45%;
+			}
+		}
+	}
+}

@@ -1,6 +1,7 @@
 :root {
   --white-primary: #fcfcfc;
   --white-secondary: #e5e5e5;
+  --white-other: #f5f5f5;
   --black-primary: #202020;
   --black-secondary: #5e5e5e;
   --blue: #1d0bef;
@@ -15,27 +16,6 @@ body {
   scroll-behavior: smooth;
 }
 
-header {
-  padding-top: 124px;
-  background-image: url(../images/banner/banner-img.png);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-header #header-title {
-  font-family: "Playfair Display", serif;
-  font-size: 52px;
-  line-height: 64px;
-}
-header #header-subtitle {
-  max-width: 65%;
-  font-size: 20px;
-  margin-bottom: 48px;
-}
-header #header-btn {
-  margin-bottom: 164px;
-}
-
 section {
   padding-top: 84px;
   padding-bottom: 84px;
@@ -43,10 +23,8 @@ section {
 
 footer {
   padding-top: 84px;
-  padding-bottom: 24px;
+  padding-bottom: 12px;
   margin-bottom: 0;
-  background-color: var(--dark-blue);
-  color: var(--white-primary);
 }
 footer .footer-title {
   font-size: 28px;
@@ -58,11 +36,12 @@ footer .footer-link {
 }
 footer .footer-link,
 footer .footer-subtitle {
-  color: var(--white-secondary);
+  color: var(--black-secondary) !important;
   text-decoration: none;
   max-width: 75%;
 }
 footer .footer-copy {
+  padding-top: 24px;
   text-align: center;
 }
 footer .row {
@@ -77,114 +56,9 @@ p {
   font-weight: 300;
 }
 
-#partners {
-  position: absolute;
-  left: 0;
-  right: 0;
-  transform: translateY(-50%);
-}
-#partners .card {
-  padding: 24px;
-  border-radius: 24px;
-  border: none;
-}
-#partners .section-subtitle {
-  margin-bottom: 0;
-}
-
-#destinations {
-  padding-top: 164px;
-  background-color: var(--dark-blue);
-  color: var(--white-primary);
-}
-#destinations .section-subtitle {
-  color: var(--white-secondary);
-}
-#destinations .card {
-  padding: 24px;
-  border: 2px solid var(--white-secondary);
-  text-align: center;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  height: 380px;
-}
-#destinations .card .destination-title {
-  font-size: 28px;
-  font-weight: 700;
-  margin-bottom: 0;
-}
-#destinations .card .btn {
-  position: absolute;
-  left: 24px;
-  right: 24px;
-  bottom: 24px;
-}
-#destinations #destination-1 {
-  background-image: url(../images/destination/destination-1.png);
-}
-#destinations #destination-2 {
-  background-image: url(../images/destination/destination-2.png);
-}
-#destinations #destination-3 {
-  background-image: url(../images/destination/destination-3.png);
-}
-#destinations #destination-4 {
-  background-image: url(../images/destination/destination-4.png);
-}
-
-#testimonials {
-  background-color: var(--dark-blue);
-  color: var(--white-primary);
-  height: 520px;
-  margin-bottom: 160px;
-}
-#testimonials .section-subtitle {
-  color: var(--white-secondary);
-}
-#testimonials .card {
-  padding: 48px 24px;
-  text-align: center;
-  border: 2px solid var(--black-secondary);
-  color: var(--black-primary);
-}
-#testimonials .testi-profile {
-  width: 45%;
-  border-radius: 104px;
-  margin-bottom: 12px;
-  margin-left: auto;
-  margin-right: auto;
-}
-#testimonials .testi-name {
-  font-size: 28px;
-  font-weight: 700;
-  margin-bottom: 0;
-}
-#testimonials .testi-desc {
-  margin: 24px 0;
-}
-#testimonials .testi-job,
-#testimonials .testi-destination {
-  color: var(--black-secondary);
-  margin-bottom: 0;
-}
-
-#cta .section-title {
-  margin-bottom: 0;
-}
-#cta .section-brand {
-  font-size: 48px;
-  margin-bottom: 12px;
-}
-#cta .section-subtitle {
-  width: 50%;
-  margin-left: auto;
-  margin-right: auto;
-}
-
 .btn {
+  padding: 12px 24px !important;
   border-radius: 12px;
-  border: none;
 }
 
 .btn-outline-primary {
@@ -198,6 +72,12 @@ p {
 
 .btn-primary {
   background-color: var(--blue);
+  border-color: var(--blue);
+}
+
+.btn-primary:hover {
+  background-color: var(--dark-blue);
+  border-color: var(--dark-blue);
 }
 
 .navbar-brand,
@@ -223,13 +103,6 @@ p {
 }
 
 @media (max-width: 575.98px) {
-  html body header #header-title {
-    font-size: 36px;
-    line-height: 48px;
-  }
-  html body header #header-subtitle {
-    font-size: 14px;
-  }
   html body section {
     padding-top: 48px;
     padding-bottom: 48px;
@@ -243,36 +116,6 @@ p {
   html body p,
   html body a {
     font-size: 14px;
-  }
-  html body #partners .container {
-    padding: 0;
-    width: 100%;
-  }
-  html body #partners .card {
-    border-radius: 0;
-    width: 100%;
-  }
-  html body #partners img {
-    height: 64px;
-  }
-  html body #destinations .card .destination-title {
-    font-size: 24px;
-  }
-  html body #testimonials {
-    height: auto;
-    margin-bottom: 0;
-  }
-  html body #testimonials .testi-name {
-    font-size: 24px;
-  }
-  html body #cta .section-brand {
-    font-size: 28px;
-  }
-  html body #cta .section-subtitle {
-    width: 100%;
-  }
-  html body #cta .btn {
-    width: 100%;
   }
   html body .btn {
     font-size: 14px;
@@ -293,37 +136,12 @@ p {
   }
 }
 @media (max-width: 767.98px) {
-  body header #header-subtitle {
-    max-width: 100%;
-  }
-  body header #header-btn {
-    width: 100%;
-  }
   body footer {
-    border-radius: 0;
-  }
-  body #testimonials {
-    height: 1520px;
-    margin-bottom: 320px;
     border-radius: 0;
   }
 }
 @media (max-width: 991.98px) {
-  header #header-btn {
-    margin-bottom: 220px;
-  }
   nav {
     background-color: var(--white-primary);
-  }
-  #partners img {
-    display: flex;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  #destinations {
-    padding-top: 220px;
-  }
-  #testimonials {
-    margin-bottom: 260px;
   }
 }/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,118 @@
+section {
+	padding-top: 24px !important;
+	padding-bottom: 24px !important;
+}
+// ID style sort by used first
+#breadcrumb {
+	padding-top: 48px;
+	padding-bottom: 84px;
+	background-color: var(--white-other);
+	.breadcrumb-item {
+		color: var(--black-primary);
+		font-weight: 300;
+		a {
+			color: var(--black-primary);
+			text-decoration: none;
+		}
+	}
+	.breadcrumb-item.active {
+		color: var(--black-primary);
+		font-weight: 700;
+	}
+}
+#main {
+	padding-top: 0;
+	padding-bottom: 0;
+	position: relative;
+	margin-top: -84px;
+	margin-bottom: 84px;
+	z-index: 2;
+}
+#input,
+#pay {
+	.card {
+		padding: 12px 24px;
+	}
+}
+#input {
+	#who {
+		p {
+			font-weight: 700;
+		}
+		.btn {
+			padding-top: 6px !important;
+			padding-bottom: 6px !important;
+		}
+	}
+	#accommodation {
+		margin-bottom: 24px;
+	}
+}
+#pay {
+	p {
+		margin-bottom: 6px;
+		b {
+			font-weight: 700;
+		}
+	}
+	.btn.w-100 {
+		position: relative;
+		z-index: 2;
+		margin-top: -80px;
+		border-radius: 0 0 6px 6px;
+	}
+	#payment {
+		margin-bottom: 24px;
+		.row {
+			margin-bottom: 24px;
+		}
+		.col-4 {
+			img {
+				width: 100%;
+			}
+		}
+	}
+}
+// Class style sort by (a-z)
+.card-title {
+	font-size: 28px;
+	font-weight: 700;
+	margin-bottom: 0;
+}
+.card-text {
+	font-weight: 400 !important;
+	color: var(--black-secondary);
+}
+.color-green {
+	color: #11cc4a;
+}
+
+// `sm` applies to x-small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) {
+}
+
+// `md` applies to small devices (landscape phones, less than 768px)
+@media (max-width: 767.98px) {
+	// ID style sort by used first
+	#breadcrumb {
+		padding-top: 24px;
+		padding-bottom: 12px;
+	}
+	#main {
+		margin-top: 0;
+	}
+	#input,
+	#pay {
+		.card {
+			padding: 0;
+			border: none;
+			margin: 0;
+			border-radius: 0;
+			background-color: var(--white-primary);
+		}
+	}
+}
+
+// `lg` applies to medium devices (tablets, less than 992px)
+@media (max-width: 991.98px) {
+}

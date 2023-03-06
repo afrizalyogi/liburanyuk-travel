@@ -1,78 +1,25 @@
-:root {
-	--white-primary: #fcfcfc;
-	--white-secondary: #e5e5e5;
-	--black-primary: #202020;
-	--black-secondary: #5e5e5e;
-	--blue: #1d0bef;
-	--dark-blue: #1f1f3f;
-}
-body {
-	font-family: "Montserrat", sans-serif;
-	background-color: var(--white-primary);
-	color: var(--black-primary);
-	min-width: 280px;
-	scroll-behavior: smooth;
-}
 nav {
 	background-color: var(--white-primary);
 }
-section {
-	padding-top: 84px;
-	padding-bottom: 84px;
-}
-footer {
-	padding-top: 84px;
-	padding-bottom: 24px;
-	margin-bottom: 0;
-	background-color: var(--dark-blue);
-	color: var(--white-primary);
-	.footer-title {
-		font-size: 28px;
-		font-weight: 700;
-	}
-	.footer-link {
-		display: block;
-		margin-bottom: 12px;
-	}
-	.footer-link,
-	.footer-subtitle {
-		color: var(--white-secondary);
-		text-decoration: none;
-		max-width: 75%;
-	}
-	.footer-copy {
-		text-align: center;
-	}
-	.row {
-		margin-bottom: 84px;
-	}
-}
-a {
-	color: var(--black-secondary);
-}
-p {
-	font-weight: 300;
-}
-
 // ID style sort by used first
 #breadcrumb {
-	padding-top: 148px;
+	padding-top: 124px;
 	padding-bottom: 148px;
-	background-color: var(--dark-blue);
+	background-color: var(--white-other);
 	.breadcrumb-item {
-		color: var(--white-primary);
+		color: var(--black-primary);
 		font-weight: 300;
 		a {
-			color: var(--white-primary);
+			color: var(--black-primary);
 			text-decoration: none;
 		}
 	}
 	.breadcrumb-item.active {
-		color: var(--white-primary);
+		color: var(--black-primary);
 		font-weight: 700;
 	}
 }
-#destination {
+#gallery {
 	padding-top: 0;
 	padding-bottom: 0;
 	position: relative;
@@ -81,15 +28,33 @@ p {
 	.card {
 		padding: 48px 86px;
 	}
-	.destination-name {
+	.gallery-title {
+		margin-bottom: 24px;
+	}
+	.gallery-name {
 		font-weight: 700;
 		font-size: 52px;
 		line-height: 24px;
 	}
+	.gallery-location {
+		font-size: 20px;
+	}
+	.gallery-img {
+		margin-bottom: 48px;
+	}
+	.gallery-about {
+		.about-title {
+			text-align: center;
+			font-family: "Playfair Display", serif;
+			font-size: 36px;
+		}
+		.about-text {
+			font-size: 20px;
+			color: var(--black-secondary);
+		}
+	}
 }
 #cta {
-	background-color: var(--dark-blue);
-	color: var(--white-primary);
 	.section-title {
 		margin-bottom: 0;
 	}
@@ -98,44 +63,35 @@ p {
 		margin-bottom: 12px;
 	}
 	.section-subtitle {
-		color: var(--white-secondary);
-		width: 50%;
+		width: 35%;
 		margin-left: auto;
 		margin-right: auto;
 	}
 }
 
-// Class style sort by (a-z)
-.btn {
-	border-radius: 12px;
-	border: none;
+// `sm` applies to x-small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) {
 }
-.btn-outline-primary {
-	border-color: var(--blue);
-	color: var(--blue);
-}
-.btn-outline-primary:hover {
-	background-color: var(--blue);
-}
-.btn-primary {
-	background-color: var(--blue);
-}
-.navbar-brand,
-.section-brand {
-	font-family: "Whisper", cursive;
-	font-size: 36px;
-}
-.section-brand {
-	margin-bottom: -18px;
-}
-.section-text {
-	text-align: center;
-	.section-title {
-		font-family: "Playfair Display", serif;
-		font-size: 36px;
+
+// `md` applies to small devices (landscape phones, less than 768px)
+@media (max-width: 767.98px) {
+	// ID style sort by used first
+	#breadcrumb {
+		padding-top: 104px;
+		padding-bottom: 24px;
 	}
-	.section-subtitle {
-		color: var(--black-secondary);
-		margin-bottom: 48px;
+	#gallery {
+		margin-top: 0;
+		.card {
+			padding: 48px 0;
+			border: none;
+			margin: 0;
+			border-radius: 0;
+			background-color: var(--white-primary);
+		}
 	}
+}
+
+// `lg` applies to medium devices (tablets, less than 992px)
+@media (max-width: 991.98px) {
 }

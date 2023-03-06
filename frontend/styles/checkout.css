@@ -1,0 +1,102 @@
+section {
+  padding-top: 24px !important;
+  padding-bottom: 24px !important;
+}
+
+#breadcrumb {
+  padding-top: 48px;
+  padding-bottom: 84px;
+  background-color: var(--white-other);
+}
+#breadcrumb .breadcrumb-item {
+  color: var(--black-primary);
+  font-weight: 300;
+}
+#breadcrumb .breadcrumb-item a {
+  color: var(--black-primary);
+  text-decoration: none;
+}
+#breadcrumb .breadcrumb-item.active {
+  color: var(--black-primary);
+  font-weight: 700;
+}
+
+#main {
+  padding-top: 0;
+  padding-bottom: 0;
+  position: relative;
+  margin-top: -84px;
+  margin-bottom: 84px;
+  z-index: 2;
+}
+
+#input .card,
+#pay .card {
+  padding: 12px 24px;
+}
+
+#input #who p {
+  font-weight: 700;
+}
+#input #who .btn {
+  padding-top: 6px !important;
+  padding-bottom: 6px !important;
+}
+#input #accommodation {
+  margin-bottom: 24px;
+}
+
+#pay p {
+  margin-bottom: 6px;
+}
+#pay p b {
+  font-weight: 700;
+}
+#pay .btn.w-100 {
+  position: relative;
+  z-index: 2;
+  margin-top: -80px;
+  border-radius: 0 0 6px 6px;
+}
+#pay #payment {
+  margin-bottom: 24px;
+}
+#pay #payment .row {
+  margin-bottom: 24px;
+}
+#pay #payment .col-4 img {
+  width: 100%;
+}
+
+.card-title {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 0;
+}
+
+.card-text {
+  font-weight: 400 !important;
+  color: var(--black-secondary);
+}
+
+.color-green {
+  color: #11cc4a;
+}
+
+@media (max-width: 767.98px) {
+  #breadcrumb {
+    padding-top: 24px;
+    padding-bottom: 12px;
+  }
+  #main {
+    margin-top: 0;
+  }
+  #input .card,
+  #pay .card {
+    padding: 0;
+    border: none;
+    margin: 0;
+    border-radius: 0;
+    background-color: var(--white-primary);
+  }
+}/*# sourceMappingURL=checkout.css.map */
